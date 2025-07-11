@@ -2,9 +2,8 @@ name: Run Python Script on Schedule
 
 on:
   schedule:
-    # Run every 15 minutes
-    - cron: "*/15 * * * *"
-  workflow_dispatch:  # Allows manual run from GitHub UI
+    - cron: "* * * * *"  # ⏱️ Every 1 minute
+  workflow_dispatch:      # 🔘 Allows manual trigger from GitHub UI
 
 jobs:
   run-script:
